@@ -6,7 +6,7 @@ def get_data():
     superhero = response.json()
     return superhero
 
-def searc_hero(hero_list):
+def search_hero(hero_list):
     hulk = {}
     captain_america = {}
     thanos = {}
@@ -33,6 +33,6 @@ def search_intelligence_hero(heroes):
             print(f'Самый умный {heroes[2]["name"]}')
 
 if __name__ == '__main__':
-    search_intelligence_hero(searc_hero(get_data()))
+    search_intelligence_hero(search_hero(get_data()))
 
 
